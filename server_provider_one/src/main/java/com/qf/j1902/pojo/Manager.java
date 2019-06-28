@@ -2,11 +2,14 @@ package com.qf.j1902.pojo;
 
 import lombok.Data;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
  * Created by Administrator on 2019/6/27.
  */
 @Data
-public class Manager {
+public class Manager implements Serializable{
    /* `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(128) DEFAULT NULL,
   `password` varchar(128) DEFAULT NULL,
@@ -28,7 +31,7 @@ public class Manager {
     private String phone;
     private String email;
     private boolean status;
-    private int create_time;
+    private Date create_time;
     private boolean is_super;
     private String consume;
     private String remark;

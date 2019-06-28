@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="GB18030">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
 	  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -230,7 +230,7 @@
 		   
 			  </div>
 			  <div class="panel-body">
-			   <button type="button" class="btn btn-primary" style="float:right;" onclick="window.location.href='addadmin.html'"><i class="glyphicon glyphicon-plus"></i> 新增</button>
+			   <button type="button" class="btn btn-primary" style="float:right;" onclick="window.location.href='/houtai/houtai/addadmin'"><i class="glyphicon glyphicon-plus"></i> 新增</button>
 <br>   
  <hr style="clear:both;">
           <div class="table-responsive">
@@ -261,6 +261,20 @@
 
 			  </tfoot>
             </table>
+			  <ul>
+				  <li>
+					  <a th:if="${isFirstPage}" href="#">上一页</a>
+					  <a th:if="${not isFirstPage}" th:href="@{${'/user'}(pageNum=${pageNum-1},pageSize=${pageSize})}">上一页</a>
+				  </li>
+				  <li th:each="pageNo:${#numbers.sequence(1, totalPages)}">
+					  <a th:if="${pageNum eq pageNo}" href="#" th:text="${pageNo}"></a>
+					  <a th:if="${not (pageNum eq pageNo)}" th:href="@{${'/user'}(pageNum=${pageNo},pageSize=${pageSize})}"	 th:text="${pageNo}"></a>
+				  </li>
+				  <li>
+					  <a th:if="${isLastPage}" href="#">下一页</a>
+					  <a th:if="${not isLastPage}" th:href="@{${'/user'}(pageNum=${pageNum+1},pageSize=${pageSize})}">下一页</a>
+				  </li>
+			  </ul>
           </div>
 			  </div>
 			</div>

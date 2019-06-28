@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.helpers.ParseConversionEventImpl;
+import java.util.ArrayList;
 
 /**
  * Created by Administrator on 2019/6/28.
@@ -18,5 +19,10 @@ public class ManagerServiceImpl implements ManagerService{
     @Override
     public Manager queryManager(String username) {
         return managerMapper.queryManager(username);
+    }
+
+    @Override
+    public ArrayList<Manager> queryAll() {
+        return managerMapper.queryAll();
     }
 }

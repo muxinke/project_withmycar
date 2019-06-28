@@ -1,5 +1,6 @@
 package com.qf.j1902.controller;
 
+import com.qf.j1902.pojo.Manager;
 import com.qf.j1902.service.DengluService;
 import com.qf.j1902.util.ImgCode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,16 +8,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import redis.clients.jedis.Jedis;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 
 
 /**
  * Created by Administrator on 2019/6/27.
  */
+@RequestMapping("/houtai")
 @Controller
 public class HoutaiController {
     @Autowired
@@ -67,5 +71,18 @@ public class HoutaiController {
         @GetMapping("/main")
         public String main(){
             return "main";
+        }
+        //后台管理者界面
+        @GetMapping("/admin")
+        public String admin(HttpServletRequest request, Model model,
+                            @RequestParam(defaultValue = "1")int pageNum){
+            //调用服务者1完成所有管理者信息的查询
+            ArrayList<Manager> managers =dengluService.queryAll();
+            return "admin";
+        }
+        //管理员新增界面
+        @GetMapping("/addadmin")
+    public String addadmin(){
+            return "addadmin";
         }
     }
