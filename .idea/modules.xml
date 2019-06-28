@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/project_withmycar.iml" filepath="$PROJECT_DIR$/project_withmycar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_consumer_houtai1/server_consumer_houtai1.iml" filepath="$PROJECT_DIR$/server_consumer_houtai1/server_consumer_houtai1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_consumer_houtai2/server_consumer_houtai2.iml" filepath="$PROJECT_DIR$/server_consumer_houtai2/server_consumer_houtai2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_provider_one/server_provider_one.iml" filepath="$PROJECT_DIR$/server_provider_one/server_provider_one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_provider_two/server_provider_two.iml" filepath="$PROJECT_DIR$/server_provider_two/server_provider_two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_register_one/server_register_one.iml" filepath="$PROJECT_DIR$/server_register_one/server_register_one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_zuul/server_zuul.iml" filepath="$PROJECT_DIR$/server_zuul/server_zuul.iml" />
+    </modules>
+  </component>
+</project>

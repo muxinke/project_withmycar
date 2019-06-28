@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.j1902.mapper.ManagerMapper">
+   <!-- /* `id` int(11) NOT NULL AUTO_INCREMENT,
+    `username` varchar(128) DEFAULT NULL,
+    `password` varchar(128) DEFAULT NULL,
+    `name` varchar(128) DEFAULT NULL,
+    `salt` varchar(128) DEFAULT NULL,
+    `phone` varchar(50) DEFAULT NULL,
+    `email` varchar(128) DEFAULT NULL,
+    `status` tinyint(4) DEFAULT NULL COMMENT '0��δ����\r\n            1������',
+    `create_time` int(11) DEFAULT NULL,
+    `is_super` tinyint(4) DEFAULT NULL COMMENT '0����ͨ����Ա\r\n            1����������Ա',
+    `consumer` varchar(200) DEFAULT NULL,
+    `remark` varchar(500) DEFAULT NULL,
+    `dept` varchar(200) DEFAULT NULL,*/-->
+    <resultMap id="managerMap" type="com.qf.j1902.pojo.Manager">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="password" column="password"></result>
+        <result property="username" column="username"></result>
+        <result property="name" column="name"></result>
+        <result property="salt" column="salt"></result>
+        <result property="phone" column="phone"></result>
+        <result property="email" column="email"></result>
+        <result property="status" column="status"></result>
+        <result property="create_time" column="create_time"></result>
+        <result property="is_super" column="is_super"></result>
+        <result property="consumer" column="consumer"></result>
+        <result property="dept" column="dept"></result>
+    </resultMap>
+<select id="queryManager" parameterType="string" resultMap="managerMap">
+    SELECT * FROM admin_user WHERE username=#{username}
+</select>
+</mapper>

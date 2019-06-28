@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/server_register_one/pom.xml" />
+        <option value="$PROJECT_DIR$/server_provider_one/pom.xml" />
+        <option value="$PROJECT_DIR$/server_provider_two/pom.xml" />
+        <option value="$PROJECT_DIR$/server_consumer_houtai1/pom.xml" />
+        <option value="$PROJECT_DIR$/server_consumer_houtai2/pom.xml" />
+        <option value="$PROJECT_DIR$/server_zuul/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
