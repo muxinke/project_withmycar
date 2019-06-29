@@ -1,5 +1,6 @@
 package com.qf.j1902.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.qf.j1902.pojo.Manager;
 import com.qf.j1902.service.ManagerService;
 import org.apache.shiro.SecurityUtils;
@@ -48,7 +49,7 @@ public class HoutaiController {
     @GetMapping("admin")
     public ArrayList<Manager> admin(){
         //查询所有管理者
-       ArrayList<Manager> managers= managerService.queryAll();
+        ArrayList<Manager> managers= managerService.queryAll();
         return managers;
     }
 }

@@ -244,16 +244,16 @@
                   <th width="260">操作</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
+              <tbody th:remove="all-but-first">
+                <tr th:each="manager:${pageInfo.list}">
+                  <td th:text="${pageInfo.list.indexOf(manager)+1}" >1</td>
+                  <td th:text="${manager.name}">Lorem</td>
+                  <td th:text="${manager.username}">ipsum</td>
                   <td>dolor</td>
 				  
                   <td>
-				      <button type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i>编辑</button>
-					  <button type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i>删除</button>
+				      <button  th:id="${manager.id}" type="button" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i>编辑</button>
+					  <button th:id="${manager.id}"  type="button" class="btn btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i>删除</button>
 				      
 				  </td>
                 </tr>
@@ -261,20 +261,6 @@
 
 			  </tfoot>
             </table>
-			  <ul>
-				  <li>
-					  <a th:if="${isFirstPage}" href="#">上一页</a>
-					  <a th:if="${not isFirstPage}" th:href="@{${'/user'}(pageNum=${pageNum-1},pageSize=${pageSize})}">上一页</a>
-				  </li>
-				  <li th:each="pageNo:${#numbers.sequence(1, totalPages)}">
-					  <a th:if="${pageNum eq pageNo}" href="#" th:text="${pageNo}"></a>
-					  <a th:if="${not (pageNum eq pageNo)}" th:href="@{${'/user'}(pageNum=${pageNo},pageSize=${pageSize})}"	 th:text="${pageNo}"></a>
-				  </li>
-				  <li>
-					  <a th:if="${isLastPage}" href="#">下一页</a>
-					  <a th:if="${not isLastPage}" th:href="@{${'/user'}(pageNum=${pageNum+1},pageSize=${pageSize})}">下一页</a>
-				  </li>
-			  </ul>
           </div>
 			  </div>
 			</div>

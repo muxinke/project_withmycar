@@ -1,5 +1,6 @@
 package com.qf.j1902.service;
 
+import com.github.pagehelper.PageInfo;
 import com.qf.j1902.pojo.Manager;
 
 import java.util.ArrayList;

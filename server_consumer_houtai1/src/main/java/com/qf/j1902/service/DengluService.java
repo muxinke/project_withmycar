@@ -1,5 +1,6 @@
 package com.qf.j1902.service;
 
+import com.github.pagehelper.PageInfo;
 import com.qf.j1902.pojo.Manager;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,5 +19,5 @@ public interface DengluService {
     @PostMapping("/denglu")
     public int idDengLuSucess(@RequestParam("username")String username,@RequestParam("password")String password);
     @GetMapping("/admin")
-    public ArrayList<Manager> queryAll();
+    public ArrayList<Manager>  queryAll();
 }

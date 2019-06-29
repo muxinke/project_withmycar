@@ -1,5 +1,7 @@
 package com.qf.j1902.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.qf.j1902.mapper.ManagerMapper;
 import com.qf.j1902.pojo.Manager;
 import com.qf.j1902.service.ManagerService;
@@ -23,6 +25,7 @@ public class ManagerServiceImpl implements ManagerService{
 
     @Override
     public ArrayList<Manager> queryAll() {
-        return managerMapper.queryAll();
+        ArrayList<Manager> managers = managerMapper.queryAll();
+        return managers;
     }
 }
