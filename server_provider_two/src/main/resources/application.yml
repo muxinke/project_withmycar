@@ -4,14 +4,15 @@ spring:
   application:
     name: server-provider-two
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/zhongchou?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
-      username: root
-      password:
-mybatis:
-        type-aliases-package: com.qf.j1902.pojo
-        mapper-locations: classpath:mapping/*.xml
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/member?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9090/eureka
+mybatis:
+  type-aliases-package: com.qf.j1902.pojo
+  mapper-locations: classpath:mapping/*.xml
