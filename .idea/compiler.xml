@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project_withmycar" />
+        <module name="common_provider_one" />
+        <module name="get_yanzhengma_provider" />
+        <module name="pojo_provider_one" />
         <module name="server_consumer_houtai1" />
         <module name="server_consumer_houtai2" />
         <module name="server_provider_one" />
@@ -17,6 +19,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common_provider_one" target="1.7" />
+      <module name="get_yanzhengma_provider" target="1.8" />
+      <module name="pojo_provider_one" target="1.7" />
       <module name="project_withmycar" target="1.5" />
       <module name="server_consume_houtai1" target="1.8" />
       <module name="server_consume_houtai2" target="1.8" />

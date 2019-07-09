@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: server-consumer-houtai1
+  redis:
+    host: localhost
+    database: 0
+    password:
+    port: 6379
 eureka:
   client:
     service-url:

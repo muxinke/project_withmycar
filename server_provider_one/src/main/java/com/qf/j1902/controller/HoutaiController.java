@@ -1,5 +1,6 @@
 package com.qf.j1902.controller;
 
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.qf.j1902.pojo.Manager;
 import com.qf.j1902.service.ManagerService;
@@ -47,9 +48,12 @@ public class HoutaiController {
     }
     //管理者信息界面
     @GetMapping("admin")
-    public ArrayList<Manager> admin(){
+    public PageInfo<Manager> admin(@RequestParam("pageNum")int pageNum,@RequestParam("pageSize")int pageSize){
         //查询所有管理者
-        ArrayList<Manager> managers= managerService.queryAll();
-        return managers;
+        PageHelper.startPage(pageNum,pageSize);
+        ArrayList<Manager> managers= managerService.queryAll(pageNum,pageSize);
+        PageInfo<Manager> managerPageInfo = new PageInfo<>(managers);
+        managerPageInfo.getPages();
+        return managerPageInfo;
     }
 }

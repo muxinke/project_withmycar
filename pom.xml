@@ -6,7 +6,12 @@
 
     <groupId>com.qf.j1902</groupId>
     <artifactId>project_withmycar</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>pojo_provider_one</module>
+        <module>common_provider_one</module>
+    </modules>
 
 
 </project>

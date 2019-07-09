@@ -12,3 +12,9 @@ zuul:
     houtai:
       path: /houtai/**
       serviceId: server-consumer-houtai1
+    houtai2:
+      path: /houtai-member/**
+      serviceId: server-consumer-houtai2
+  host:
+    connect-timeout-millis: 80000
+    socket-timeout-millis: 80000

@@ -24,7 +24,7 @@ public class ManagerServiceImpl implements ManagerService{
     }
 
     @Override
-    public ArrayList<Manager> queryAll() {
+    public ArrayList<Manager> queryAll(int pageNum,int pageSize) {
         ArrayList<Manager> managers = managerMapper.queryAll();
         return managers;
     }

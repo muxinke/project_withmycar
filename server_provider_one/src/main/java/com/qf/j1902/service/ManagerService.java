@@ -12,5 +12,5 @@ public interface ManagerService {
     //根据username查询用户信息
     public Manager queryManager(String username);
     //查询所有管理者信息
-    ArrayList<Manager> queryAll();
+    ArrayList<Manager> queryAll(int pageNum,int pageSize);
 }

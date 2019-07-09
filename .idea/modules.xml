@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common_provider_one/common_provider_one.iml" filepath="$PROJECT_DIR$/common_provider_one/common_provider_one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/get_yanzhengma_provider/get_yanzhengma_provider.iml" filepath="$PROJECT_DIR$/get_yanzhengma_provider/get_yanzhengma_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pojo_provider_one/pojo_provider_one.iml" filepath="$PROJECT_DIR$/pojo_provider_one/pojo_provider_one.iml" />
       <module fileurl="file://$PROJECT_DIR$/project_withmycar.iml" filepath="$PROJECT_DIR$/project_withmycar.iml" />
       <module fileurl="file://$PROJECT_DIR$/server_consumer_houtai1/server_consumer_houtai1.iml" filepath="$PROJECT_DIR$/server_consumer_houtai1/server_consumer_houtai1.iml" />
       <module fileurl="file://$PROJECT_DIR$/server_consumer_houtai2/server_consumer_houtai2.iml" filepath="$PROJECT_DIR$/server_consumer_houtai2/server_consumer_houtai2.iml" />

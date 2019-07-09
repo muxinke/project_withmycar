@@ -35,6 +35,6 @@
     SELECT * FROM admin_user WHERE username=#{username}
 </select>
     <select id="queryAll" resultMap="managerMap">
-        SELECT * FROM admin_user;
+        SELECT * FROM admin_user
     </select>
 </mapper>
