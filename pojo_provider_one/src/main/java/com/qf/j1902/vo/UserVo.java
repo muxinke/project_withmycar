@@ -14,5 +14,5 @@ public class UserVo {
     private String nickname;
     private String name;
     private String gender;
-    private Date registerTime;
+    private String registerTime;
 }
