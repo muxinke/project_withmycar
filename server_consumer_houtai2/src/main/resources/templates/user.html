@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/theme.css">
+	<style>
+	.tree li {
+        list-style-type: none;
+		cursor:pointer;
+	}
+	table tbody tr:nth-child(odd){background:#F4F4F4;}
+	table tbody td:nth-child(even){color:#C00;}
+	.tou{
+	   color:#FFFF00;
+       	   
+	}
+	td{
+	  text-align:center;
+	}
+	th{
+	  text-align:center;
+	}
+	</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div><img class="navbar-brand" src="../img/product-8.jpg"/><a class="navbar-brand" style="font-size:20px;" href="#">“伴我汽车”管理平台</a></div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" >
+            <li style="padding-top:8px;margin-top:16px;">
+				<div><span class="tou">时间：</span><span class="tou">2014-78-96</span></div>
+			</li>
+            <li style="margin-left:10px;padding-top:8px;margin-top:16px;">
+				 <div><span class="tou">用户：</span><span class="tou">超级管理员</span></div>
+		   
+			</li>
+			 <li style="margin-left:10px;padding-top:8px;margin-top:16px;">
+				 <div><span class="tou">用户：</span><span class="tou">超级管理员</span></div>
+		   
+			</li>
+			<li style="margin-left:10px;padding-top:8px;">
+				<a href="#">退出</a>
+		   
+			</li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+			<div class="tree">
+				<ul style="padding-left:0px;" class="list-group">
+					
+					<li class="list-group-item tree-closed">
+						<span> 会员管理 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="user.html"> 会员管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 咨讯管理 <span class="badge" style="float:right">4</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="caogao.html"> 草稿箱</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="zxshenhe.html"> 资讯审核</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="zxfabu.html"> 资讯发布</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="zxleibiao.html"> 资讯列表</a> 
+							</li>
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 活动管理 <span class="badge" style="float:right">4</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="hdliebiao.html"> 活动列表</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="hdtuijian.html"> 推荐活动</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="hdleixing.html"> 类型管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="hdqudao.html"> 渠道管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span>车型库管理 <span class="badge" style="float:right">6</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="pp.html"> 品牌管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="changshang.html">厂商管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="chexi.html">车系管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="chekuan.html">车款管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="canshufeilei.html">参数分类管理</a> 
+							</li>
+							<li style="height:30px;">
+								<a href="canshu.html">参数管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 标签定义 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="biaoqian.html"> 标签定义</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span>标签管理 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="bqguanli.html"> 标签管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 系统消息 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="xitongxiaoxi.html"> 系统消息</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 管理员管理 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="admin.html"> 管理员管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 角色管理 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="role.html"> 角色管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span>个人中心 <span class="badge" style="float:right">1</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="gerenzhongxin.html"> 个人中心</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span> 日志管理 <span class="badge" style="float:right">3</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="rizhi.html"> 日志管理</a> 
+							</li>
+							
+						</ul>
+					</li>
+					<li class="list-group-item tree-closed">
+						<span>网站设置 <span class="badge" style="float:right">3</span></span> 
+						<ul style="margin-top:10px;display:none;">
+							<li style="height:30px;">
+								<a href="wangzhan.html">网站参数设置</a> 
+							</li>
+							
+						</ul>
+					</li>
+				</ul>
+			</div>
+        </div>
+        
+      </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+				<span class="panel-title"> 会员管理</span>
+			
+				<form class="form-inline" role="form" style="float:right;">
+                  <div class="form-group has-feedback">
+                      <div class="input-group">
+                  <div class="input-group-addon">查询条件</div>
+                 <input class="form-control has-success" type="text" placeholder="请输入查询条件">
+                   </div>
+           </div>
+             <button  type="button" class="btn btn-warning"><i class="glyphicon glyphicon-search"></i> 查询</button>
+           </form>
+		   
+			  </div>
+			  <div class="panel-body">
+			   <button type="button" class="btn btn-primary" style="float:right;" onclick="window.location.href='form.html'"><i class="glyphicon glyphicon-plus"></i> 新增</button>
+<br>   
+ <hr style="clear:both;">
+          <div class="table-responsive">
+            <table class="table  table-bordered" >
+              <thead >
+                <tr >
+                  <th width="50">序号</th>
+                  <th >账号</th>
+                  <th>昵称</th>
+                  <th>姓名</th>
+				  <th>性别</th>
+				  <th>注册时间</th>
+                  <th width="100">功能</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr th:each="user:${users}">
+                  <td th:text="${user.id}">1</td>
+                  <td th:text="${user.username}">Lorem</td>
+                  <td th:text="${user.nickname}">ipsum</td>
+                  <td th:text="${user.name}">dolor</td>
+                  <td th:text="${user.gender}">男</td>
+                  <td class="time" th:text="${user.registerTime}">2017-08-02</td>
+				  
+                  <td>
+				      <button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i>详情</button>
+				      
+				  </td>
+                </tr>
+                
+               </tbody>
+			   
+			   <tfoot>
+			     <tr >
+				     <td colspan="7" align="center">
+						<ul class="pagination">
+								<li class="disabled"><a href="#">上一页</a></li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">下一页</a></li>
+							 </ul>
+					 </td>
+				 </tr>
+
+			  </tfoot>
+            </table>
+          </div>
+			  </div>
+			</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../jquery/jquery-2.1.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../script/docs.min.js"></script>
+     <script>
+            $(function () {
+			    $(".list-group-item").click(function(){
+				    if ( $(this).find("ul") ) {
+						$(this).toggleClass("tree-closed");
+						if ( $(this).hasClass("tree-closed") ) {
+							$("ul", this).hide("fast");
+						} else {
+							$("ul", this).show("fast");
+						}
+					}
+				});
+            });
+            $("tbody .btn-success").click(function(){
+                window.location.href = "assignRole.html";
+            });
+            $("tbody .btn-primary").click(function(){
+                window.location.href = "edit.html";
+            });
+
+        </script>
+  </body>
+</html>

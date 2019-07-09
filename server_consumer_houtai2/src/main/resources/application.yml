@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: server-consumer-houtai2
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
 eureka:
   client:
     service-url:
